@@ -1,73 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/styles.css">
   <title>Cat Photo Web</title>
 </head>
+
 <body>
-  <main>
-    <h1>CatPhotoApp</h1>
-    <section>
-      <h2>Cat Photos</h2>
-      <!-- TODO: Add link to cat photos -->
-      <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
-      <a href="https://freecatphotoapp.com"><img
-          src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
-          alt="A cute orange cat lying on its back."></a>
-    </section>
-    <section>
-      <h2>Cat Lists</h2>
-      <h3>Things cats love:</h3>
+
+  <header>
+    <div class="logo">
+      <img src="./img/1280px-PetSmart.svg.png" alt="">
+    </div>
+    <nav class="text">
       <ul>
-        <li>cat nip</li>
-        <li>laser pointers</li>
-        <li>lasagna</li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">More Info</a></li>
       </ul>
-      <figure>
-        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
-        <figcaption>Cats <em>love</em> lasagna.</figcaption>
-      </figure>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero eius laborum eveniet, dicta, blanditiis alias doloremque optio deserunt quisquam saepe maiores nesciunt fuga eos fugiat? Minima harum officiis aspernatur dolore. Iure, excepturi. Alias sapiente molestiae quae accusamus magnam dolorem nobis inventore ducimus vero. Consequatur eos, accusantium quia dolore dicta ipsam.</p>
-      <h3>Top 3 things cats hate:</h3>
-      <ol>
-        <li>flea treatment</li>
-        <li>thunder</li>
-        <li>other cats</li>
-        <li>dogs</li>
-        <li>rats</li>
-      </ol>
-      <figure>
-        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
-        <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
-      </figure>
+    </nav>
+    <div class="registration">
+      <button>Login</button>
+      <button>Cart</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="body_1">
+      <div>
+        <h1>Cats</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda odit beatae velit quas minus dolores quam
+          vero quae. Neque totam temporibus perspiciatis at quis eligendi expedita, esse dolore rem fuga facere possimus
+          architecto?
+          Repudiandae molestiae nam explicabo cum excepturi, esse laboriosam nostrum possimus dicta, tempora tenetur
+          doloremque cumque aperiam consectetur incidunt quod eius repellendus velit libero dolore. Maxime iste ipsum
+          qui, exercitationem ipsam sapiente dolorem quisquam nobis magni hic possimus laudantium repudiandae magnam
+          recusandae officia, distinctio
+          pariatur aliquid ratione beatae aperiam tempore. Earum, dignissimos nam similique accusamus inventore
+          excepturi alias
+          officia tempore vel distinctio necessitatibus explicabo sapiente doloremque neque quidem.</p>
+      </div>
+
     </section>
-    <section>
-      <h2>Cat Form</h2>
-      <form action="https://freecatphotoapp.com/submit-cat-photo">
-        <fieldset>
-          <legend>Is your cat an indoor or outdoor cat?</legend>
-          <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
-          <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
-        </fieldset>
-        <fieldset>
-          <legend>What's your cat's personality?</legend>
-          <input id="loving" type="checkbox" name="personality" value="loving" checked> <label for="loving">Loving</label>
-          <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
-          <input id="energetic" type="checkbox" name="personality" value="energetic"> <label
-            for="energetic">Energetic</label>
-        </fieldset>
-        <input type="text" name="catphotourl" placeholder="cat photo URL" required>
-        <button type="submit">Submit</button>
-      </form>
-    </section>
+    <section class="body_2">
+      <h1>Cats Likes and Dislikes</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum corporis, cumque delectus quisquam esse eum
+        autem, nobis quo provident aperiam asperiores nihil placeat dolore aspernatur dolores ex. Itaque atque deleniti
+        sed molestiae, error libero corrupti facilis. Veritatis sit vero nihil corrupti optio, repudiandae in voluptates
+        neque repellat sunt quos dicta? Commodi, modi incidunt. Dolor, ipsa dicta! Nostrum velit officiis corrupti vel?
+        Exercitationem rerum voluptate eos laboriosam veniam, adipisci velit illo quas ipsa nostrum hic odio iste
+        similique voluptates delectus nihil rem minus doloremque? Et doloribus inventore debitis animi, eos ea,
+        exercitationem nemo cumque vel suscipit, perspiciatis neque blanditiis atque harum? Below are what clas love</p>
+      <h2>What Cats love</h2>
+      <ul>
+        <li>Cats love Climbing</li>
+        <li>Cats Love Taking Naps</li>
+        <li>Cats Love Grooming and Being Groomed</li>
+        <li>Cats Love Fresh, Nutritious Food</li>
+        <li>Cats Love Running Water</li>
+        <li>Cats Love Scratching and Clawing</li>
+        <li>Cats Love Daily Playtime</li>
+        <li>Cats Love Watching Birds</li>
+        <li>Cats Love Their Humans</li>
+      </ul>
+      <h2>What Cats love to eat</h2>
+      <ul>
+        <li>Cat Nip</li>
+        <li>Lasagna</li>
+        <li>Tuna</li>
+      </ul>
+
+      <section class="body_3">
+        <h1>PetSmarts Cats</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae minima sit soluta repellendus numquam
+          dolorum architecto aperiam aspernatur, inventore iure qui corporis doloremque mollitia laboriosam unde tempore
+          id nemo? Inventore optio eum, rerum consequatur omnis tempore blanditiis. Fugit officia autem quod nostrum
+          recusandae nam debitis quas doloribus iusto voluptate expedita ab, vitae blanditiis nemo deleniti ratione eius
+          praesentium dicta et ipsum saepe repellendus illum. Minima iusto veniam iure deserunt? Explicabo vel natus
+          aspernatur mollitia non laboriosam ipsa cum ratione saepe nihil hic, omnis illo odio accusamus. Facere et
+          dolorum natus rem, cum officia maiores blanditiis consequuntur sit, maxime unde porro officiis eum ab non
+          tempora velit nihil. Autem nulla eos, at dignissimos ratione nihil quasi sed nam numquam error cum architecto
+          omnis ea eum, atque recusandae quo nesciunt? Dignissimos ad maxime, porro odio tenetur magni debitis odit
+          omnis hic reiciendis sit rem, dolores expedita non. Quasi sint quaerat minima tempora. Dolorum distinctio hic
+          veniam dicta doloremque voluptate quisquam laudantium quam quos voluptatibus rerum, earum veritatis pariatur
+          delectus ab laborum quia repellat sapiente ex magnam atque! Eveniet dolore quos ipsum sint vero reprehenderit,
+          tempore voluptas reiciendis quo sapiente maiores optio et atque commodi libero tenetur, quod exercitationem
+          voluptate laboriosam nihil? Incidunt molestiae iure in placeat rem consequuntur cumque maxime dolorum laborum,
+          facere reiciendis sed, vitae qui perspiciatis laudantium aliquid ipsum officiis eligendi non ullam eum
+          tempora. Eligendi vitae voluptatem consectetur consequatur ut ipsam modi, soluta dolor numquam tempore
+          dolorum, qui, optio illo. Omnis, non quis? Impedit magni tempora voluptatibus, esse rem labore voluptatum
+          fugiat quibusdam animi atque, reprehenderit aut eveniet. Soluta amet magni, corporis officiis animi sunt
+          veniam praesentium distinctio, repellendus recusandae voluptatem nulla ad architecto blanditiis illum sapiente
+          quo delectus. Rem voluptate placeat, voluptatum odit ipsum atque ipsa ab quas distinctio vero dicta quos
+          adipisci exercitationem nihil quam aliquam. Iusto?</p>
+        <h2>Things Cats Hate</h2>
+        <ul>
+          <li>Flea treatment</li>
+          <li>Thunder</li>
+          <li>Other cats</li>
+          <li>Dogs</li>
+          <li>Rats</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Kindly Fill this form</h2>
+        <div class="forms">
+          <form>
+            <div class="row">
+              <div class="col_1">
+                <label for="fname">First Name</label>
+              </div>
+              <div class="col_2">
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col_1">
+                <label for="lname">Last Name</label>
+              </div>
+              <div class="col_2">
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col_1">
+                <label for="country">Country</label>
+              </div>
+              <div class="col_2">
+                <select id="country" name="country">
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                  <option value="Nigeria">Nigeria</option>
+                  <option value="Ghana">Ghana</option>
+                  <option value="Argentina">Argentina</option>
+                  <option value="France">France</option>
+                  <option value="Ethiopia">Ethiopia</option>
+                  <option value="Netherlands">Netherlands</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col_1">
+                <label for="subject">Order Description</label>
+              </div>
+              <div class="col_2">
+                <textarea id="subject" name="subject" placeholder="Describe your order..."
+                  style="height:200px"></textarea>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <input type="submit" value="Submit">
+            </div>
+          </form>
+        </div>
+
+      </section>
+
+      <div class="images">
+        <!-- images -->
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+          alt="A cute orange cat lying on its back.">
+        <!-- images -->
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
+          alt="A slice of lasagna on a plate.">
+        <!-- images -->
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
+          alt="Five cats looking around a field.">
+    
+      </div>
+      <footer>
+        <p>
+          No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+        </p>
+      </footer>
+
   </main>
-  <footer>
-    <p>
-      No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
-    </p>
-  </footer>
 </body>
 
 </html>
