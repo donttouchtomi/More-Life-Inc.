@@ -7,19 +7,21 @@
 
 header {
   /* border: 1px solid black; */
-  display: inline-flex;
-  text-align: center;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: 10px;
+  margin: 0 30px;
+  /* max-width: 500px; */
 }
 
 .logo {
   /* border: 1px solid black; */
   display: inline;
-  margin: 15px 100px;
+  margin: 15px 10px;
 }
 
-.text ul {
+.navBar ul {
   /* border: 1px solid black; */
   width: 500px;
   height: 50px;
@@ -29,7 +31,7 @@ header {
   margin: 15px 100px;
 }
 
-.text ul li a {
+.navBar ul li a {
   /* border: 1px solid black; */
   display: flex;
   padding: 10px;
@@ -38,14 +40,14 @@ header {
   font-weight: 600;
 }
 
-.registration {
+.buttons {
   /* border: 1px solid black; */
   display: flex;
   gap: 10px;
   margin-top: 20px;
 }
 
-.registration button {
+.buttons button {
   background-color: #CB6D10;
   width: 70px;
   height: 35px;
@@ -56,52 +58,116 @@ header {
 }
 
 .body_1 {
-  width: 700px;
-  text-align: justify;
+  /* border: 1px solid black; */
   margin: 10px 50px;
+  display: flex;
 }
 
 .body_1 h1 {
+  /* border: 1px solid black; */
   font-size: 45px;
   color: #CB6D10;
-  /* margin: 10px 0; */
+  margin: 10px 0;
+  width: 500px;
 }
 
-/* .body_1 div img {} */
+.body_1 .textBodyWrap p {
+  /* border: 1px solid black; */
+  text-align: justify;
+  width: 50rem;
+  margin: 10px 0;
+}
+
+.body_1 .leftWrap {
+  /* border: 1px solid black; */
+  margin-top: 50px;
+  margin-left: 50px;
+  display: inline;
+}
+
+.body_1 .leftWrap img {
+  height: 430px;
+  width: 430px;
+}
 
 .body_2 {
-  width: 700px;
-  text-align: justify;
-  margin: 20px 50px;
+  /* border: 1px solid black; */
+  margin: 10px 50px;
+  display: flex;
 }
 
-.body_2 h1 {
-  font-size: 45px;
-  color: #CB6D10;
+.body_2 div img {
+  /* border: 1px solid black; */
+  height: 265px;
+  width: 500px;
 }
 
-/* .body_2 img {} */
-
-.body_2 h2 {
-  font-size: 25px;
-  margin-top: 30px;
+.body_2 .rightWrap {
+  /* border: 1px solid black; */
+  margin: 0 50px;
 }
 
-.body_2 ul {
+.body_2 .rightWrap ul {
+  /* border: 1px solid black; */
+  list-style: square;
   margin-top: 10px;
-  list-style: none;
 }
 
-.body_2 ul li {
+.body_2 .rightWrap ul li {
+  /* border: 1px solid black; */
   line-height: 25px;
 }
 
 .body_3 {
-  width: 700px;
-  text-align: justify;
-  margin: 20px 0;
+    /* border: 1px solid black; */
+    margin: 10px 50px;
+    display: flex;
 }
 
+.body_3 h1 {
+  /* border: 1px solid black; */
+  font-size: 45px;
+  color: #CB6D10;
+  margin: 10px 0;
+  width: 500px;
+}
+
+.body_3 .textBodyWrap_1 p {
+  /* border: 1px solid black; */
+  text-align: justify;
+  width: 40rem;
+  margin: 10px 0;
+}
+
+.body_3 .rightWrap_2 {
+  margin-left: 50px;
+  /* border: 1px solid black; */
+}
+
+.body_3 .rightWrap_2 ul {
+  /* border: 1px solid black; */
+  list-style: square;
+  margin-top: 10px;
+}
+
+.body_3 .rightWrap_2 ul li {
+  /* border: 1px solid black; */
+  line-height: 25px;
+}
+
+.body_3 .leftWrap_2 {
+  /* border: 1px solid black; */
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.body_3 .leftWrap_2 img {
+  width: 400px;
+}
+
+.form {
+  margin: 0 50px;
+}
 .yourName {
   width: 250px;
   height: 25px;
@@ -159,4 +225,13 @@ input[type=submit]:hover {
   content: "";
   display: table;
   clear: both;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer a {
+  color: brown;
+  text-decoration: none;
 }
