@@ -21,6 +21,11 @@ header {
   margin: 15px 10px;
 }
 
+.logo img {
+  width: 200px;
+
+}
+
 .navBar ul {
   /* border: 1px solid black; */
   width: 500px;
@@ -28,7 +33,7 @@ header {
   list-style: none;
   display: flex;
   gap: 5px;
-  margin: 15px 100px;
+  margin: 20px 100px;
 }
 
 .navBar ul li a {
@@ -44,7 +49,6 @@ header {
   /* border: 1px solid black; */
   display: flex;
   gap: 10px;
-  margin-top: 20px;
 }
 
 .buttons button {
@@ -118,6 +122,11 @@ header {
   line-height: 25px;
 }
 
+.body_2 .rightWrap_2 {
+  margin-top: 60px;
+  margin-left: 70px;
+}
+
 .body_3 {
     /* border: 1px solid black; */
     margin: 10px 50px;
@@ -139,18 +148,19 @@ header {
   margin: 10px 0;
 }
 
-.body_3 .rightWrap_2 {
+.body_3 .rightWrap_3 {
+  margin-top: 100px;
   margin-left: 50px;
   /* border: 1px solid black; */
 }
 
-.body_3 .rightWrap_2 ul {
+.body_3 .rightWrap_3 ul {
   /* border: 1px solid black; */
   list-style: square;
   margin-top: 10px;
 }
 
-.body_3 .rightWrap_2 ul li {
+.body_3 .rightWrap_3 ul li {
   /* border: 1px solid black; */
   line-height: 25px;
 }
