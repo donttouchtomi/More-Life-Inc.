@@ -45,7 +45,7 @@ header {
 
 .navBar ul li a {
   /* border: 1px solid black; */
-  display: flex;
+  /* display: flex; */
   padding: 10px;
   text-decoration: none;
   color: black;
@@ -74,7 +74,7 @@ header {
 .body_1 {
   /* border: 1px solid black; */
   margin: 10px 50px;
-  display: flex;
+  /* display: flex; */
 }
 
 .body_1 h1 {
@@ -101,7 +101,7 @@ header {
 
 .body_1 .leftWrap img {
   height: 430px;
-  width: 430px;
+  /* width: 430px; */
 }
 
 .body_2 {
@@ -182,7 +182,7 @@ header {
 }
 
 .body_3 .leftWrap_2 img {
-  width: 400px;
+  /* width: 400px; */
 }
 
 .form {
