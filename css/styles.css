@@ -2,180 +2,93 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  
 }
 
-header {
+.head {
   /* border: 1px solid black; */
-  margin: 10px  30px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
+  background-color: white;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100vw;
 }
 
-.logo {
-  /* border: 1px solid black; */
-}
-
-.logo h1  {
-  font-size: 1.3rem;
-  font-family: 'Times New Roman', Times, serif;
-}
-span {
-color: #CB6D10;
-font-family: 'Times New Roman', Times, serif;
-cursor: pointer;
-font-size: 2rem;
-}
-.navBar ul {
-  /* border: 1px solid black; */
-  list-style: none;
-  display: flex;
-  /* gap: 5px; */
-}
-
-.navBar ul li a {
-  /* border: 1px solid black; */
-  padding: 10px;
-  text-decoration: none;
-  color: black;
-  font-weight: 600;
-}
-.navBar ul li a:hover {
-  color: #CB6D10;
-  text-decoration: underline;
-}
-.buttons button {
-  background-color: #CB6D10;
-  padding: 10px 20px;
-  color: rgba(255, 255, 255, 1);
-  border: 1px solid #CB6D10;
-  border-radius: 3.5px;
+.logo > h1 , span {
+   /* border: 1px solid black; */
+  color: #CCC9E7;
+  font-family: "Playwrite CU", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin: 5px 0;
+  font-size: 24px;
   cursor: pointer;
+}
+
+span {
+  color: #2E3138;
+}
+
+.navBar ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.navBar > ul > li > a {
+  text-decoration: none;
+  color: #2E3138;
+}
+.navBar > ul > li > a:hover {
+  color: #247BA0;
+}
+
+.buttons > button {
+  background-color: #50514F;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  transition: 0.5s all;
+}
+
+.login:hover {
+  background-color: #CCC9E7;
+  color: #2E3138;
+  transform: translate(20px);
+}
+.signup:hover {
+  background-color: #BBB5BD;
+  color: #F9F8F8;
+  transform: translate(-20px);
 }
 
 .body_1 {
+  position: relative;
+  top: 70px;
+}
+.float{
   /* border: 1px solid black; */
-  margin: 10px 50px;
+  margin: 0 30px;
 }
 
-.body_1 h1 {
-  /* border: 1px solid black; */
+.one > img {
+  width: 300px;
+  float: left;
+  margin-right: 20px;
+}
+
+.one h1 {
   font-size: 3rem;
-  color: #CB6D10;
-  margin: 10px 0 0 0;
+  color: #BBB5BD;
 }
-
-.body_1 p {
-  /* border: 1px solid black; */
+.one p {
   text-align: justify;
-}
 
-.body_2 {
-  /* border: 1px solid black; */
-  margin: 10px 50px;
-}
-
-.body_2 div img {
-  /* border: 1px solid black; */
-  height: 265px;
-  width: 500px;
-}
-
-.body_2 .rightWrap {
-  /* border: 1px solid black; */
-  margin: 0 50px;
-}
-
-.body_2 .rightWrap ul {
-  /* border: 1px solid black; */
-  list-style: square;
-  margin: 10px 0;
-}
-
-.form {
-  margin: 0 50px;
-}
-.yourName {
-  width: 250px;
-  height: 25px;
-  margin: 10px 0;
-  padding: 0 10px;
-}
-
-input[type=text],
-select,
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-}
-
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
-
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: right;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-.forms {
-  padding: 20px;
-}
-
-.col_1 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-}
-
-.col_2 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
-}
-
-/* Clear floats after the columns */
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.footer {
-  text-align: center;
-}
-
-.footer a {
-  color: brown;
-  text-decoration: none;
-}
-@media (max-width: 700px) {
-  .navBar ul li a {
-    font-size: 0.9rem;
-  }
-
-  .body_1 {
-    width: 550px;
-  }
-  .logo h1 {
-    font-size: 1rem;
-  }
-  span {
-    font-size: 1.5rem;
-  }
 }
