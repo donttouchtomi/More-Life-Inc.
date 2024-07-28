@@ -11,8 +11,8 @@
 .head {
   /* border: 1px solid black; */
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
   align-items: center;
   background-color: white;
   position: fixed;
@@ -21,7 +21,6 @@
   width: 100vw;
 }
 
-
 .logo > h1 , span {
    /* border: 1px solid black; */
   color: #CCC9E7;
@@ -29,7 +28,7 @@
   font-optical-sizing: auto;
   font-style: normal;
   margin: 5px 0;
-  font-size: 24px;
+  font-size: 1.5rem;
   cursor: pointer;
 }
 
@@ -228,8 +227,18 @@ footer  {
   .navBar {
     display: none;
   }
+  .head {
+    justify-content: space-around;
+  }
+  .body {
+    top: 30px;
+  }
   .float {
-    margin: 15px;
+    margin: 20px 15px;
+  }
+  .buttons > button {
+    padding: 10px;
+    font-size: 0.7rem;
   }
   .one > img, .two > img, .three img {
     width: 100px;
@@ -242,6 +251,9 @@ footer  {
   }
   .three p {
     width: 100%;
+  }
+  .logo > h1 , span {
+    font-size: 1rem;
   }
   .wrap {
     display: block;
