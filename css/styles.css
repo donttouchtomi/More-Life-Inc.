@@ -230,10 +230,10 @@ footer  {
   }
 
   .one > img, .two > img, .three img {
-    width: 200px;
+    width: 100px;
   }
   .one  h1, .two  h1, .rightWrap > h2, .three h1 {
-    font-size: 2rem;
+    font-size: 1rem;
   }
   .one p, .two p , .rightWrap ul li, .three p {
     font-size: 0.8rem;
