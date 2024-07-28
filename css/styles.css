@@ -229,7 +229,7 @@ footer  {
     display: none;
   }
   .float {
-    margin: 5px 10px;
+    margin: 15px;
   }
   .one > img, .two > img, .three img {
     width: 100px;
