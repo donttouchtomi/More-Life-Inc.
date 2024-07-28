@@ -228,7 +228,9 @@ footer  {
   .navBar {
     display: none;
   }
-
+  .float {
+    margin: 10px 20px;
+  }
   .one > img, .two > img, .three img {
     width: 100px;
   }
