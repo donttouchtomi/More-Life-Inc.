@@ -1,0 +1,65 @@
+.form {
+    margin: 0 50px;
+    text-align: center;
+}
+
+.yourName {
+    width: 250px;
+    height: 25px;
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+#submit {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    transition: 0.5s all;
+}
+
+#submit:hover {
+    background-color: #45a049;
+    transform: translate(-30px);
+}
+
+.forms {
+    padding: 20px;
+}
+
+.col_1 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col_2 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
