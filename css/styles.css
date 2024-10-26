@@ -2,61 +2,77 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Rubik", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+  font-family: "Montserrat", system-ui;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  transition: .2s linear;
+}
 
+:root {
+  --white-background: #fff;
+  --black-background: #000;
+  --body: #ebebeb;
+  --main-color: #646464;
+}
+
+body {
+background-color: var(--body);
 }
 
 .head {
-  /* border: 1px solid black; */
   display: flex;
-  /* flex-wrap: wrap; */
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  background-color: white;
+  flex-wrap: wrap;
+  background-color: var(--white-background);
+  padding: 1rem 5%;
   position: fixed;
-  z-index: 1;
   top: 0;
-  width: 100vw;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 
-.logo>h1,
-span {
-  /* border: 1px solid black; */
-  color: #CCC9E7;
-  font-family: "Playwrite CU", cursive;
-  font-optical-sizing: auto;
-  font-style: normal;
-  margin: 5px 0;
-  font-size: 1.5rem;
+.head i {
+  color: var(--black-background);
   cursor: pointer;
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  display: none;
+}
+.logo h1 {
+  display: inline-block;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #CCC9E7;
 }
 
-span {
-  color: #2E3138;
+.logo h1 span {
+  font-size: 2rem;
+  color: var(--black-background);
 }
 
-.navBar ul {
+.navBar {
   display: flex;
-  gap: 40px;
-  list-style: none;
+  gap: 20px;
+  text-transform: uppercase;
 }
 
-.navBar>ul>li>a {
-  text-decoration: none;
-  color: #2E3138;
+.navBar a {
+  color: var(--black-background);
+  font-weight: 600;
 }
 
-.navBar>ul>li>a:hover {
-  color: #247BA0;
+.navBar a:hover {
+  border-bottom: 2px solid #247BA0;
 }
 
-.buttons>button {
-  background-color: #50514F;
-  /* color: white; */
-  padding: 10px 25px;
-  border: none;
+.btn button {
+  background-color: var(--black-background);
+  color: var(--white-background);
+  padding: 0.6rem 1.6rem;
+  text-transform: uppercase;
   border-radius: 5px;
   transition: 0.5s all;
 }
@@ -66,101 +82,182 @@ button a {
   text-decoration: none;
 }
 
-.login:hover {
+.btn button:hover {
   background-color: #CCC9E7;
-  color: #2E3138;
   transform: translate(20px);
 }
 
-.signup:hover {
-  background-color: #BBB5BD;
-  color: #F9F8F8;
-  transform: translate(-20px);
+.btn button a:hover {
+  color: var(--black-background);
 }
-
-.login:active,
-.signup:active {
-  background-color: #7e7e83;
-}
-
-.body {
-  position: relative;
-  top: 70px;
-}
-
-.float {
-  /* border: 1px solid black; */
-  margin: 20px 30px;
-}
-
-
-.one>img {
-  width: 300px;
-  float: left;
-  margin-right: 20px;
-}
-
-.one h1 {
-  font-size: 3rem;
-  color: #BBB5BD;
-}
-
-.one p {
-  text-align: justify;
-}
-
-
-.two>img {
-  width: 400px;
-  float: right;
-  margin-left: 20px;
-}
-
-.two h1 {
-  font-size: 3rem;
-  color: #BBB5BD;
-}
-
-.two p {
-  text-align: justify;
-}
-
-.wrap {
+/* heading style starts */
+.heading {
+  min-height: 100vh;
   display: flex;
-  justify-content: space-evenly;
   flex-wrap: wrap;
+  align-items: center;
+  padding:  5rem;
 }
 
-.rightWrap {
-  /* border: 1px solid black; */
-  margin: 30px;
+.heading .content {
+  flex: 1 1 500px;
+  max-width: 30rem;
 }
 
-.rightWrap>h2 {
-  font-size: 2.5rem;
-  color: #BBB5BD;
+.heading .content h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
 }
 
-.rightWrap ul li {
-  list-style: none;
-  margin: 5px 10px;
+.heading .content p {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.8;
+  padding: 1rem 0;
 }
 
-.three h1 {
+.heading .image {
+  flex: 1 1 500px;
+}
+
+.heading .image img {
+  object-fit: cover;
+  width: 100%;
+}
+/* heading style ends */
+/* section one starts */
+.first_paragraph {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.first_paragraph .image-1 {
+  flex: 1 1 450px;
+}
+
+.first_paragraph .image-1 img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.first_paragraph .image_text {
+  flex: 1 1 450px;
+  padding: 1rem;
+} 
+
+.first_paragraph .image_text h1 {
   font-size: 3rem;
-  color: #BBB5BD;
+  text-transform: uppercase;
+  color: var(--main-color);
+  margin-bottom: 1rem;
+  border-bottom: 5px solid var(--black-background);
 }
 
-.three p {
+.first_paragraph .image_text p {
   text-align: justify;
-  /* display: inline-block; */
-  /* width: 80%; */
+  font-weight: 500;
+  line-height: 25px;
 }
 
-.three>img {
-  margin: 0 20px;
-  width: 250px;
-  float: right;
+.second_paragraph {
+  margin-top: 72.5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.second_paragraph .image-1 {
+  flex: 1 1 350px;
+}
+.second_paragraph .image-1 img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.second_paragraph .image_text {
+  flex: 1 1 450px;
+  padding: 1rem;
+} 
+
+.second_paragraph .image_text h1 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  color: var(--main-color);
+  margin-bottom: 1rem;
+  border-bottom: 5px solid var(--black-background);
+}
+
+.second_paragraph .image_text p {
+  text-align: justify;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.list .rightList {
+  flex: 1 1 200px;
+}
+
+.list .rightList h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--main-color);
+}
+
+.list .rightList ul {
+  list-style: none;
+}
+
+.list .rightList ul li {
+  color: var(--black-background);
+  line-height: 25px;
+}
+
+
+.list .middlenews {
+  flex: 1 1 200px;
+}
+
+.list .middlenews h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--main-color);
+}
+
+
+.list .middlenews p {
+  color: var(--black-background);
+  line-height: 25px;
+}
+
+.list .leftList {
+  flex: 1 1 200px;
+}
+
+.list .leftList h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--main-color);
+}
+
+.list .leftList ul {
+  list-style: none;
+}
+
+.list .leftList ul li {
+  color: var(--black-background);
+  line-height: 25px;
 }
 
 .footer {
@@ -169,5 +266,6 @@ button a {
 
 .footer a {
   text-decoration: none;
-  color: #2E3138;
+  color: var(--black-background);
+  font-weight: 600;
 }
